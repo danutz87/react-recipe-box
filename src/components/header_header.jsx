@@ -1,4 +1,6 @@
 import React from 'react';
+import AddButton from './add_button';
+import AddRecipe from './add_recipe';
 
 class HeaderHeader extends React.Component {
   constructor() {
@@ -20,7 +22,7 @@ class HeaderHeader extends React.Component {
     return (
       <header className="page__header">
         <div className="container flex-container">
-            <h1>Recipe Box</h1>
+          <h1>Recipe Box</h1>
           <AddButton
             toggleHidden={this.toggleHidden.bind(this)}
           />

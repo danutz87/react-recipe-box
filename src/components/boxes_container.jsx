@@ -1,6 +1,8 @@
 import React from 'react';
 import Box from './box';
 import HeaderHeader from './header_header';
+import Index from './index';
+import Footer from './footer';
 
 class BoxesContainer extends React.Component {
   constructor() {
@@ -56,8 +58,12 @@ class BoxesContainer extends React.Component {
    * array
    */
   getIndex(key) {
-    var i = this.state.data.findIndex((element)=>{
-      if (element.key === key) { return true} })
+    const i = this.state.data.findIndex((element) => {
+      if (element.key === key) {
+        return true;
+      }
+    });
+
     return i;
   }
 
