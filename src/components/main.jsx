@@ -1,4 +1,5 @@
 import React from 'react';
+import marked from 'marked';
 
 class Main extends React.Component {
   handleChangeImg(e) {
@@ -19,9 +20,9 @@ class Main extends React.Component {
     this.props.update({ ingredients: str });
   }
 
-  rawMarkup(text) {
-    const rawMarkup = marked(text);
-    return {__html: rawMarkup };
+  RawMarkup(text) {
+    let RawMarkup = marked(text);
+    return { __html: RawMarkup };
   }
 
   render() {
@@ -43,24 +44,24 @@ class Main extends React.Component {
               className="box__ingredients"
               contentEditable={editable ? true : false}
               onBlur={this.handleChangeIngredients.bind(this)}
-              dangerouslySetInnerHTML={this.rawMarkup(this.props.ingredients)}
-                />
-              </div>
+              dangerouslySetInnerHTML={this.RawMarkup(this.props.ingredients)}
+            />
+          </div>
           <div className="column six">
             <img
               src={this.props.img}
               className="box__img"
             />
-                {editable && editImg}
-              </div>
+            {editable && editImg}
+          </div>
         </div>
         <h3>Instructions</h3>
         <p
           className="box__instructions"
           contentEditable={editable ? true : false}
           onBlur={this.handleChangeInstructions.bind(this)}
-          dangerouslySetInnerHTML={this.rawMarkup(this.props.instructions)}
-      />
+          dangerouslySetInnerHTML={this.RawMarkup(this.props.instructions)}
+        />
       </main>
     );
   }
