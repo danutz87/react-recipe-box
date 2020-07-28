@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <footer className="page__footer">
         <div className="container">
-          <div className="column four">
+          <div className="column">
           <h2>Let's Connect</h2>
           <ul className="connect-list">
             <li className="connect-list__item">
