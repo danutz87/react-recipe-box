@@ -11,7 +11,7 @@ class Footer extends React.Component {
             <li className="connect-list__item">
               <a
                 className="connect-list__link"
-                href="linkedin.com/in/daniel-ghimpu-7076ab1a0"
+                href="https://www.linkedin.com/in/daniel-ghimpu-7076ab1a0/"
                 target="newwindow"
               >
                 <i className="zmdi zmdi-linkedin zmdi-hc-5x" />
