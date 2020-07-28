@@ -14,7 +14,7 @@ class Footer extends React.Component {
                 href="https://www.linkedin.com/in/daniel-ghimpu-7076ab1a0/"
                 target="newwindow"
               >
-                <i className="zmdi zmdi-linkedin zmdi-hc-5x" />
+                <i className="zmdi zmdi-linkedin zmdi-hc-3x" />
               </a>
             </li>
             <li className="connect-list__item">
@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 href="https://github.com/danutz87"
                 target="newwindow"
               >
-                <i className="zmdi zmdi-github-alt zmdi-hc-5x" />
+                <i className="zmdi zmdi-github-alt zmdi-hc-3x" />
               </a>
             </li>
             <li className="connect-list__item">
@@ -32,7 +32,7 @@ class Footer extends React.Component {
                 href="https://twitter.com/daniel_ghimpu"
                 target="newwindow"
               >
-                <i className="zmdi zmdi-twitter zmdi-hc-5x" />
+                <i className="zmdi zmdi-twitter zmdi-hc-3x" />
               </a>
             </li>
           </ul>
